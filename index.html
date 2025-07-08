@@ -153,11 +153,10 @@
           <p>
             Subject-consistent generation (SCG)—aiming to maintain a consistent subject identity across diverse scenes—remains a challenge for text-to-image (T2I) models. Existing training-free SCG methods often achieve consistency at the cost of layout and pose diversity, hindering expressive visual storytelling. 
 To address the limitation, we propose subject-<b>Co</b>nsistent and pose-<b>Di</b>verse T2I framework, dubbed as <b>CoDi</b>, that enables consistent subject generation with diverse pose and layout.   
-Motivated by the progressive nature of diffusion, where coarse structures emerge early and fine details are refined later, <b>CoDi</b> adopts a two-stage strategy: <i>I</i>dentity <i>T</i>ransport (<i>IT</i>) and <i>I</i>dentity <i>R</i>efinement (<i>IR</i>).  
-  <i>IT</i> operates in the early denoising steps, using optimal transport to transfer identity features to each target image in a pose-aware manner. This promotes subject consistency while preserving pose diversity.
-   <i>IR</i> is applied in the later denoising steps, selecting the most salient identity features to further refine subject details.
+Motivated by the progressive nature of diffusion, where coarse structures emerge early and fine details are refined later, <b>CoDi</b> adopts a two-stage strategy: <b>I</b>dentity <b>T</b>ransport (<b>IT</b>) and <b>I</b>dentity <b>R</b>efinement (<b>IR</b>).  
+  <b>IT</b> operates in the early denoising steps, using optimal transport to transfer identity features to each target image in a pose-aware manner. This promotes subject consistency while preserving pose diversity.
+   <b>IR</b> is applied in the later denoising steps, selecting the most salient identity features to further refine subject details.
 Extensive qualitative and quantitative results on subject consistency, pose diversity, and prompt fidelity demonstrate that <b>CoDi</b> achieves both better visual perception and stronger performance across all metrics.
-The code is provided in the supplementary materials.
           </p>
         </div>
       </div>
