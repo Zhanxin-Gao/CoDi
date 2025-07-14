@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+    content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CoDi: Subject-Consistent and Pose-Diverse Text-to-Image Generation</title>
@@ -22,191 +23,202 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> -->
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <link rel="icon" href="data:;base64,=">
 </head>
+
 <body>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CoDi: Subject-Consistent and Pose-Diverse Text-to-Image Generation</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://github.com/Zhanxin-Gao">Zhanxin Gao</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://beierzhu.github.io/">Beier Zhu</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://kunyulin.github.io/">Kun-Yu Lin</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <!-- <a href="https://scholar.google.com/citations?user=6CIDtZQAAAAJ&hl=en">Jian Yang</a><sup>1</sup>, -->
-              Jian Yang<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://tyshiwo.github.io/">Ying Tai</a><sup>1<span class="corresponding-author">✉</span></sup>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Nanjing University,</span>
-            <span class="author-block"><sup>2</sup>Nanyang Technological University</span>
-            <span class="author-block"><sup>3</sup>The University of Hong Kong</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+            <h1 class="title is-1 publication-title">CoDi: Subject-Consistent and Pose-Diverse Text-to-Image Generation
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6ln5cJ0AAAAJ&hl=zh-CN&oi=sra">Zhanxin Gao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://beierzhu.github.io/">Beier Zhu</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6gXHAU0AAAAJ&hl=en">Liang Yao</a><sup>3</sup>,
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6CIDtZQAAAAJ&hl=en">Jian Yang</a><sup>1</sup>,
               </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+              <span class="author-block">
+                <a href="https://tyshiwo.github.io/">Ying Tai</a><sup>1<span
+                    class="corresponding-author">✉</span></sup>,
               </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-            </div> -->
+            </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanjing University,</span>
+              <span class="author-block"><sup>2</sup>Nanyang Technological University</span>
+              <span class="author-block"><sup>3</sup>Vipshop</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2507.08396" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/NJU-PCALab/CoDi" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img id="teaser" src="./static/images/teaser.jpeg" alt="Teaser Image" style="height:100%;">
-      <h2 class="subtitle has-text-centered">
-        <!-- <span class="dnerf">CoDi</span> turns selfie videos from your phone into -->
-        Existing methods sacrifice pose diversity for subject consistency. In contrast, our <b>CoDi</b> generates consistent subjects, while matching the pose diversity of Vanilla SDXL.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img id="teaser" src="./static/images/teaser.jpeg" alt="Teaser Image"
+          style="width:100%; height:auto; max-width:100%;">
         <div class="content has-text-justified">
           <p>
-            Subject-consistent generation (SCG)—aiming to maintain a consistent subject identity across diverse scenes—remains a challenge for text-to-image (T2I) models. Existing training-free SCG methods often achieve consistency at the cost of layout and pose diversity, hindering expressive visual storytelling. 
-To address the limitation, we propose subject-<b>Co</b>nsistent and pose-<b>Di</b>verse T2I framework, dubbed as <b>CoDi</b>, that enables consistent subject generation with diverse pose and layout.   
-Motivated by the progressive nature of diffusion, where coarse structures emerge early and fine details are refined later, <b>CoDi</b> adopts a two-stage strategy: <b>I</b>dentity <b>T</b>ransport (<b>IT</b>) and <b>I</b>dentity <b>R</b>efinement (<b>IR</b>).  
-  <b>IT</b> operates in the early denoising steps, using optimal transport to transfer identity features to each target image in a pose-aware manner. This promotes subject consistency while preserving pose diversity.
-   <b>IR</b> is applied in the later denoising steps, selecting the most salient identity features to further refine subject details.
-Extensive qualitative and quantitative results on subject consistency, pose diversity, and prompt fidelity demonstrate that <b>CoDi</b> achieves both better visual perception and stronger performance across all metrics.
+            <!-- Existing methods sacrifice pose diversity for subject consistency. In contrast, our <b>CoDi</b> generates
+            consistent subjects, while matching the pose diversity of Vanilla SDXL. -->
+            Comparison of subject-consistent generation methods: Vanilla SDXL,
+            ConsiStory, StoryDiffusion and CoDi(ours).
+            <b>(a&b)</b> Existing methods sacrifice pose diversity for subject consistency, e.g., ConsiStory produces
+            similar poses: the subject faces the lower left in (a); and the lower right with
+            hands placed in front in (b). In contrast, CoDi generates consistent subjects, while
+            matching the pose diversity of Vanilla SDXL.
+            <b>(c)</b> We report two metrics to assess pose quality: 1) fidelity, measuring the distance to the pose
+            of SDXL, and 2) diversity. Our CoDi attains the best performance
+            on both metrics.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </section>
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Subject-consistent generation (SCG)—aiming to maintain a consistent subject identity across diverse
+              scenes—remains a challenge for text-to-image (T2I) models. Existing training-free SCG methods often
+              achieve consistency at the cost of layout and pose diversity, hindering expressive visual storytelling.
+              To address the limitation, we propose subject-<b>Co</b>nsistent and pose-<b>Di</b>verse T2I framework,
+              dubbed as <b>CoDi</b>, that enables consistent subject generation with diverse pose and layout.
+              Motivated by the progressive nature of diffusion, where coarse structures emerge early and fine details
+              are refined later, <b>CoDi</b> adopts a two-stage strategy: <b>I</b>dentity <b>T</b>ransport (<b>IT</b>)
+              and <b>I</b>dentity <b>R</b>efinement (<b>IR</b>).
+              <b>IT</b> operates in the early denoising steps, using optimal transport to transfer identity features to
+              each target image in a pose-aware manner. This promotes subject consistency while preserving pose
+              diversity.
+              <b>IR</b> is applied in the later denoising steps, selecting the most salient identity features to further
+              refine subject details.
+              Extensive qualitative and quantitative results on subject consistency, pose diversity, and prompt fidelity
+              demonstrate that <b>CoDi</b> achieves both better visual perception and stronger performance across all
+              metrics.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
+  </section>
+  <!--/ Abstract. -->
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- model architecture. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Model Architecture</h2>
+          <img id="architecture" src="./static/images/architecture.jpg" alt="architecture"
+            style="width:100%; height:auto; max-width:100%;">
+          <div class="content has-text-justified">
+            <p>
+              Illustration of our CoDi.
+              <b>(a)</b> Extract subject masks (M<sub>id</sub> and M<sub>n</sub>) by averaging the
+              image-text cross-attention at the final denoising timestep for subject-related tokens (e.g.,
+              "fairy").
+              <b>(b)</b> Compute the OT plan T<sub>n</sub> using the cost matrix and the probability
+              masses.
+              <b>(c)</b> Identity transport (IT) operates in the early denoising steps to
+              transfer reference subject features to target images in a pose-aware manner.
+              <b>(d)</b> Identity refinement (IR) operates in the late denoising steps to refine subject details
+              using selective cross-image attention mechanism.
+            </p>
+          </div>
+
+          </h2>
+        </div>
+      </div>
+      <!--/ model architecture. -->
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+  </section>
+
+  <!-- <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              The website template was borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
