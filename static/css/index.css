@@ -161,6 +161,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel .carousel-item {
@@ -182,14 +183,4 @@ body {
   display: block;
 }
 
-.carousel-nav-left,
-.carousel-nav-right {
-  background: rgba(255, 255, 255, 0.4);
-  border: none;
-  z-index: 10;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0.5rem;
-  font-size: 1.5rem;
-}
 
